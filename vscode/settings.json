@@ -1,52 +1,69 @@
 {
+	// WINDOW
 	"window.zoomLevel": -1,
+	// WORKBENCH
 	"workbench.iconTheme": "vscode-icons",
-	"workbench.colorTheme": "Monokai",
+	"workbench.colorTheme": "Default Dark+",
+	"workbench.preferredDarkColorTheme": "Default Dark+",
+	// ESLINT
 	"eslint.alwaysShowStatus": true,
-	"eslint.codeActionsOnSave.mode": "problems",
 	"eslint.lintTask.enable": true,
 	"eslint.packageManager": "yarn",
+	"eslint.codeAction.showDocumentation": {
+		"enable": true
+	},
+	"eslint.format.enable": true,
+	// TODO-TREE
 	"todo-tree.tree.showScanModeButton": true,
-	"javascript.updateImportsOnFileMove.enabled": "always",
-	"javascript.format.enable": true,
-	"javascript.format.insertSpaceAfterConstructor": true,
-	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
-	"workbench.settings.useSplitJSON": true,
+	// EDITOR
 	"editor.semanticHighlighting.enabled": false,
-	"files.exclude": {
-		"**/node_modules": true
-	},
-	"prettier.packageManager": "yarn",
-	"[json]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"prettier.tabWidth": 4,
-	"prettier.useTabs": true,
-	"javascript.preferences.quoteStyle": "single",
-	"typescript.preferences.quoteStyle": "single",
-	"prettier.jsxSingleQuote": true,
-	"prettier.singleQuote": true,
-	"prettier.trailingComma": "all",
-	"prettier.bracketSpacing": false,
-	"prettier.semi": false,
-	"prettier.printWidth": 120,
-	"[html]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"python.pythonPath": "/usr/bin/python3",
-	"python.linting.pylintEnabled": true,
-	"python.linting.enabled": true,
-	"explorer.confirmDelete": false,
-	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[jsonc]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
+	"editor.formatOnSave": true,
+	"editor.fontSize": 16,
+	"editor.fontFamily": "monospace",
+	"editor.renderWhitespace": "selection",
+	"editor.insertSpaces": true,
+	"editor.wordWrap": "off",
 	"editor.codeActionsOnSave": {
 		"source.fixAll.eslint": true
-	}
+	},
+	// EXPLORER
+	"explorer.confirmDelete": true,
+	// GIT
+	"git.autofetch": true,
+	// FILES
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/node_modules": true
+	},
+	// LANGUAGES
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	// ZEN
+	"zenMode.centerLayout": true,
+	"zenMode.fullScreen": true,
+	"zenMode.hideActivityBar": true,
+	"zenMode.hideLineNumbers": true,
+	"zenMode.hideStatusBar": true,
+	"zenMode.hideTabs": true,
+	"zenMode.restore": false,
+	"zenMode.silentNotifications": true,
+	// SCREEN CAST
+	"screencastMode.fontSize": 56,
+	"screencastMode.keyboardOverlayTimeout": 800,
+	"screencastMode.mouseIndicatorColor": "#FF0000",
+	"screencastMode.mouseIndicatorSize": 20,
+	"screencastMode.onlyKeyboardShortcuts": false,
+	"screencastMode.verticalOffset": 20,
+	"explorer.compactFolders": false,
+	"editor.useTabStops": false
 }
