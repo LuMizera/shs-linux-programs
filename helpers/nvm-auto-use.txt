@@ -47,5 +47,19 @@ cdnvm(){
             nvm use "$nvm_version";
         fi
     fi
+    
+    #python .virtualenv
+
+    python_virtualenv=$(find-up .virtualenv | tr -d '[:space:]')
+    if [[ ! $python_virtualenv = *[^[:space:]]* ]]; then
+        if [[ $(which pip) != "/usr/bin/pip" ]]; then
+            deactivate
+        fi
+    elif [[ -s $python_virtualenv/.virtualenv && -r $python_virtualenv/.virtualenv ]]; then
+        if [[ $(which pip) == "/usr/bin/pip" ]]; then
+            source .virtualenv/bin/activate
+            pip install -r requirements.txt
+        fi
+    fi
 }
 alias cd='cdnvm'
